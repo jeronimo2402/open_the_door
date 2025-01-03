@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <report
+            string="Informe usuario"
+            id="open_the_door_user_report"
+            model="open_the_door.user"
+            report_type="qweb-pdf"
+            name="open_the_door.report_user_card"
+            file="open_the_door.report_user_card"
+            attachment_use="True"
+        />
+    </data>
+</odoo>

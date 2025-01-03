@@ -1,15 +1,12 @@
 <odoo>
     <data>
-        <template id="report_visit_card">
+        <template id="report_user_card">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-call="web.external_layout">
                         <div class="page">
-                            <h2>Visita</h2>
-                            <p>Cliente:
-                                <span t-field="o.customer.name"/>
-                            </p>
-                            <p>Descripción:
+                            <h2>Información Usuario</h2>
+                            <p>Nombre:
                                 <span t-field="o.name"/>
                             </p>
                             <p>Fecha:

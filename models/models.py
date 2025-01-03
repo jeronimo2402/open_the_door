@@ -9,6 +9,7 @@ class User(models.Model):
      _description = 'User'
 
      name = fields.Char(string='Nombre')
+     identification = fields.Char(string='Identificación')
      date = fields.Datetime(string='Fecha')
      gender = fields.Selection([('M', 'Masculino'), ('F', 'Femenino')], string='Genero', requiered=True)
      image = fields.Binary(string='Imagen')
@@ -40,7 +41,10 @@ class User(models.Model):
           user = self.env['open_the_door.user'].browse([4])
           user.unlink()
 
-# class VisitReport(models.AbstractModel):
+     # def f_images(self):
+     #      return None
+
+# class UserReport(models.AbstractModel):
 #
 #      _name = 'report.open_the_door.report_user_card'
 #

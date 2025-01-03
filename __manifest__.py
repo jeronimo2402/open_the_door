@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "open_the_door",
+    'name': "Open The Door",
 
     'summary': """
         Modulo para administración de entrada de usuarios
@@ -11,7 +11,7 @@
         o tarjetas RFID a Pragmatic
     """,
 
-    'author': "Open The Door",
+    'author': "Pragmatic",
     'website': "https://www.open_the_door.com",
 
     # Categories can be used to filter modules in modules listing
@@ -28,7 +28,7 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'reports/visit.xml',
+        'reports/user.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
